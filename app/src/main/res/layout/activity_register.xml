@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center" />
+
+        <!-- Ad Soyad -->
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Ad Soyad"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:background="@drawable/edittex_bg" />
+
+        <!-- E-Posta -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="E-Posta"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"
+            android:background="@drawable/edittex_bg" />
+
+
+        <!-- Şifre -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:background="@drawable/edittex_bg" />
+
+        <!-- Cinsiyet -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinsiyet"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Erkek"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Kadın"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+
+
+
+        <!-- Doğum Tarihi -->
+        <EditText
+            android:id="@+id/birthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Doğum Tarihi"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="#000000"
+            android:background="@drawable/edittex_bg"
+            android:inputType="none" />
+
+        <!-- İlgi Alanları (Spinner) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İlgi Alanları"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/interestSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittex_bg"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Kayıt Ol Butonu -->
+
+        <CheckBox
+            android:id="@+id/chcremember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beni Hatırla"
+            android:textColor="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/RegisterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/continue_button"
+            android:text="KAYIT OL"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:elevation="0dp"/>
+    </LinearLayout>
+</ScrollView>

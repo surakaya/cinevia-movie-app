@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#101010"
+    android:padding="8dp">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/chatTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🤖 CineVia AI"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textStyle="bold" />
+
+    <!-- Mesaj listesi (dikey layout içinde) -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout
+            android:id="@+id/messageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <!-- Mesaj girme alanı -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/inputMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Cevabını yaz..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#999999"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:maxLines="4"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            android:contentDescription="Gönder"
+            android:background="@null"
+            app:tint="#00FFAA"
+            android:padding="12dp"
+            android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+</LinearLayout>

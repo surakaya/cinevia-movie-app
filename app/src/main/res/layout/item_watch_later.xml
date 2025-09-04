@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="#121212"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/moviePoster"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Film Başlığı"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/movieGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tür bilgisi"
+            android:textColor="#bbbbbb"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnWatchNow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/play"
+        android:contentDescription="İzle"
+        android:tint="#1DB954"/>
+</LinearLayout>

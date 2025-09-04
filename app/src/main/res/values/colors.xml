@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorComedy">#FFCDD2</color>     <!-- Açık kırmızı -->
+    <color name="colorAction">#C8E6C9</color>     <!-- Açık yeşil -->
+    <color name="colorDrama">#BBDEFB</color>      <!-- Açık mavi -->
+    <color name="colorRomantic">#F8BBD0</color>   <!-- Pembe -->
+    <color name="colorHorror">#D7CCC8</color>     <!-- Gri/bej -->
+    <color name="colorScifi">#B2EBF2</color>      <!-- Camgöbeği -->
+    <color name="colorFantasy">#E1BEE7</color>    <!-- Lila -->
+    <color name="colorMusical">#FFF9C4</color>    <!-- Açık sarı -->
+    <color name="white">#FFFFFFFF</color>
+</resources>

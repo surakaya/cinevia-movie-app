@@ -1,0 +1,93 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".HomeScreen">
+
+    <!-- Kategori bölümleri (önce yerleştirilsin ki butonlar üstte dursun) -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/sectionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/topButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:weightSum="5"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/btnChatbot"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_chatbot"
+            android:contentDescription="Chatbot" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnfilmoner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/continue_button"
+            android:text="Öner"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnSinemalar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_location"
+            android:contentDescription="Sinemalar" />
+
+        <ImageButton
+            android:id="@+id/btnLists"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_list"
+            android:contentDescription="Listeler" />
+
+        <ImageButton
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="Profil" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

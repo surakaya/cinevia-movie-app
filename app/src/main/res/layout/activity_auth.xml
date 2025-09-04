@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+
+    <!-- Kullanıcı Adı -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="24dp"
+        android:hint="Kullanıcı Adı"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:background="@drawable/edittex_bg" />
+
+    <!-- Şifre -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="16dp"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:background="@drawable/edittex_bg" />
+
+    <!-- Giriş Yap Butonu -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/continue_button"
+        android:elevation="0dp"
+        android:text="GİRİŞ YAP"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Kayıt Ol Butonu -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/RegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/continue_button"
+        android:elevation="0dp"
+        android:text="KAYIT OL"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

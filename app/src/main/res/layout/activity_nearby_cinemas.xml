@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="8dp">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/titleNearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yakındaki Yerler"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Harita -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapNearby"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/titleNearby"
+        android:layout_marginTop="8dp" />
+
+    <!-- Sinema listesi -->
+    <ListView
+        android:id="@+id/listNearbyPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mapNearby"
+        android:layout_marginTop="8dp"
+        android:divider="#888"
+        android:dividerHeight="1dp"/>
+</RelativeLayout>
